@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators and Converters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+    <div class="container">
+        <h1>Calculators and Converters</h1>
+
+        <div class="calculator">
+            <h2>Simple Interest Calculator</h2>
+            <label>Principal:</label>
+            <input placeholder="Principal" type="number" id="si-principal-1">
+            <label>Rate of Interest (%):</label>
+            <input placeholder="Rate" type="number" id="si-rate-1">
+            <label>Time (years):</label>
+            <input placeholder="Time" type="number" id="si-time-1">
+            <button onclick="calculateSimpleInterest()">Calculate</button>
+            <p id="si-result-1"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Compound Interest Calculator</h2>
+            <label>Principal:</label>
+            <input placeholder="Principal" type="number" id="ci-principal-2">
+            <label>Rate of Interest (%):</label>
+            <input placeholder="Rate" type="number" id="ci-rate-2">
+            <label>Time (years):</label>
+            <input placeholder="Time" type="number" id="ci-time-2">
+            <label>Compounds per year:</label>
+            <input placeholder="Compound" type="number" id="ci-compounds-2">
+            <button onclick="calculateCompoundInterest()">Calculate</button>
+            <p id="ci-result-2"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>CGPA Calculator</h2>
+            <label>Enter Grades (comma-separated):</label>
+            <input placeholder="Course Grades" type="text" id="cgpa-grades-3">
+            <button onclick="calculateCGPA()">Calculate</button>
+            <p id="cgpa-result-3"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Temperature Converter</h2>
+            <label>Fahrenheit:</label>
+            <input placeholder="Degree" type="number" id="temp-fahrenheit-4">
+            <button onclick="convertTemperature()">Convert</button>
+            <p id="temp-result-4"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>Currency Converter</h2>
+            <label>USD:</label>
+            <input placeholder="USD" type="number" id="usd-amount-5">
+            <button onclick="convertCurrencyToNaira()">Convert to NGN</button>
+            <p id="usd-to-ngn-result-5"></p>
+
+            <label>NGN:</label>
+            <input placeholder="NGN" type="number" id="ngn-amount-6">
+            <button onclick="convertCurrencyToUSD()">Convert to USD</button>
+            <p id="ngn-to-usd-result-6"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
